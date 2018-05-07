@@ -10,7 +10,6 @@ Scanner letterScanner;
 String inputChar;
 ArrayList<String> wrongGuessesMade;
 
-
         public Game(int guessesAllowed, Movie inputMovie){
             this.guessesAllowed = guessesAllowed;
             this.inputMovie = inputMovie;
@@ -51,9 +50,7 @@ ArrayList<String> wrongGuessesMade;
                 else{
                     wrongGuessesMade.add(inputChar);
                 }
-                
                     guessesMade.add(inputChar);
-                
             }
             else{
                 System.out.println("Invalid guess, please try again.");
@@ -72,10 +69,6 @@ ArrayList<String> wrongGuessesMade;
                 System.out.println("Error: Only enter 1 letter, a-z.");
                 inputValid = false;
             }
-            
-            
-            
-            
             return inputValid;
         }
         //Prints out wrong guesses made, guesses remaining, and checks
@@ -95,10 +88,7 @@ ArrayList<String> wrongGuessesMade;
                 System.out.println("Congratulations, you won!");
                 endGame = true;
             }
-            
             return endGame;
-            
-            
         }
 
 
