@@ -1,3 +1,5 @@
+
+
 import java.io.File;
 import java.util.Scanner;
 import java.util.Random;
@@ -6,7 +8,7 @@ class MovieList {
     String fileLocation;
     String[] movieArray;
     
-    
+    //Need to caculate number of movies automatically
     public MovieList(int numberOfMovies, String fileLocation) throws Exception{
         this.fileLocation = fileLocation;
         movieArray = new String[numberOfMovies];
